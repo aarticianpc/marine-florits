@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}Home{% endblock %}
+
+{% block navbar-left %}
+  {% include "_navbar.html" with active_link="contact" %}
+{% endblock %}
+
+{% block floating-sidebar %}
+  {% include "_sidebar.html" with active_link="contact" %}
+{% endblock %}  
+
+{% block navbar-right %}
+  {% if not user.is_authenticated %}
+    {# {% crispy signin_form %} #}
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock %}
+
+{% block jumbo-tron %}
+<div class="jumbotron jumbotron-carousel corporate-jumbo" style="background-image:url(/static/site/img/contact-banner.jpg); no-repeat center center;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-8">
+        <h1>{% include "_brandname.html" %}</h1>
+        <p>Best Quality Christmas Trees & Greens in NYC</p>
+        <p>Greenpoint Trees LLC Home Delivery Christmas Trees</p>
+        <p>1-800-399-7796</p>
+      </div>
+     <!-- <div class="col-md-4 col-sm-4">
+       {# {% if not user.is_authenticated %} #}
+          <div class="span3 well">
+            <legend>Create an Account</legend>
+           {# {% crispy signup_form %} #}
+          </div>
+        {# {% endif %} #} 
+        </div>-->
+      </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block container %}
+   <div class="container bg-white">
+		<div class="row">	            
+			<div class="col-md-8">
+				<div class="heading box">
+           			<p> <strong>Greenpoint Trees LLC. Home Delivery Christmas Trees</strong></p>
+        		</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="box">
+					<img src="/static/site/img/santa.png" alt="santa">
+				</div>
+			</div>
+		</div>	
+
+      	<div class="row">	            
+			<div class="col-md-8">				
+				<div class="form box">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputName">Name</label>
+							<input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						</div>						 
+						<div class="checkbox">
+							<label>
+								<input type="checkbox">Check here to receive email updates
+							</label>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputSubject">Subject</label>
+							<input type="text" class="form-control" id="exampleInputSubject" placeholder="Subject">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputMessage">Message</label>
+							<textarea class="form-control" rows="3"></textarea>
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4 text text-center">
+				<p>We like hearing from our customers.Send us any questions or special requests you may have. We will get back to you promptly. </p>
+				<img src="/static/site/img/merry.png" alt="merry">           
+			</div>	        
+      	</div>
+
+      	<div class="row">	            
+			<div class="col-md-8 col-md-offset-2">
+				<div class="text-center contact-link">
+           			<p> +800-399-7796 &nbsp |</p>
+           			<a href="#">greenpointtrees@gmail.com</a>
+        		</div>
+			</div>
+		</div>	
+
+
+    </div>    
+
+
+<!-- Benefits of the Django application -->
+
+
+{% endblock container %}
+

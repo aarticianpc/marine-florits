@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}Home{% endblock %}
+
+{% block navbar-left %}
+  {% include "_navbar.html" with active_link="about" %}
+{% endblock %}
+
+{% block floating-sidebar %}
+  {% include "_sidebar.html" with active_link="about" %}
+{% endblock %}  
+
+{% block navbar-right %}
+  {% if not user.is_authenticated %}
+    {#{% crispy signin_form %}#}
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock %}
+
+{% block jumbo-tron %}
+<div class="jumbotron jumbotron-carousel corporate-jumbo" style="background-image:url(/static/site/img/about-banner.jpg); no-repeat center center;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-8">
+        <h1>{% include "_brandname.html" %}</h1>
+        <p>Best Quality Christmas Trees & Greens in NYC</p>
+        <p>Greenpoint Trees LLC Home Delivery Christmas Trees</p>
+        <p>1-800-399-7796</p>
+      </div>
+     <!-- <div class="col-md-4 col-sm-4">
+       {# {% if not user.is_authenticated %} #}
+          <div class="span3 well">
+            <legend>Create an Account</legend>
+           {# {% crispy signup_form %} #}
+          </div>
+        {# {% endif %} #} 
+        </div>-->
+      </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block container %}
+
+   <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+            <div class="text-black box">
+              <p> <strong>Greenpoint Trees. Same corner, same tradition</strong></p>
+           </div>     
+        </div>
+        <div class="col-md-4">
+         <div class="img-section">
+              <img src="/static/site/img/about-team.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="contact-text">
+              <p> Greenpoint Trees has been in business since 1990 and it all started on a corner in Greenpoint, Brooklyn, NY by inheriting the business from an older gentleman who was unwell and ready to retire. Greenpoint Tree's has grown over the years to having several locations as well as an online business and home delivery.  We harvest the best quality Christmas Tress in North Carolina and Canada. Quality and customer satisfaction are most important to us. </p>
+           </div>
+           <div class="contact-text">
+              <p> The owners, Stephen and Dorothy find the holiday season the roughest and most challenging time of the year.  He has worked at Greenpoint Trees every day of every Christmas season since he was seven. He worked under his landlord, John Conway. When Conway died, Stephen decided to continue the tradition. He has a nine-to-five job as a construction site supervisor in Manhattan, while still running daily operations of Greenpoint Trees. His wife, handles all emails, home delivery and special orders that come in while running a full household with 5 children.  It is definitely a family business as even all their children from age 20 right down to their 8 yr. old, help in the business in some capacity after school and on weekends. </p>
+           </div>
+           <div class="contact-text">
+              <p>Greenpoint Trees is a landmark in the neighborhood. We are unique in that we live in the community we do business in.  We see our customers day in and day out. We are involved in the community and lead both a Cub Scout Pack and Boy Scout Troop in Greenpoint, Brooklyn. Many neighbors, customers for up to 25 years, wouldn’t consider buying elsewhere.“You have familiar faces you see every year, and unfortunately this is the time of the year when you find out they’re not around anymore,” Dorothy said. </p>
+           </div>
+           <div class="contact-text">
+              <p>  The business has several locations in Brooklyn and Queens as well as our Home Delivery Service. We have some locations that are open 24 hours a day due to high demand.  Customers come from all over and almost every hour of the day (yes, even at 3am) to purchase trees. Our pricing is more reasonable than Manhattan, while offering free local delivery and discounted delivery outside of Greenpoint. They also specialize in big trees. When we say big trees, we mean up to 40 feet tall! Most corner lots only carry up to 10 feet, while Greenpoint Trees you can find up to 15ft, sometimes 20 ft right on site! </p>
+           </div>                
+        </div>                
+      </div>
+    </div>
+    
+        
+
+      </div>
+
+
+    </div>    
+
+
+<!-- Benefits of the Django application -->
+
+
+{% endblock container %}
+

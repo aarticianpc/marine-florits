@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}Home{% endblock %}
+
+{% block navbar-left %}
+  {% include "_navbar.html" with active_link="product" %}
+{% endblock %}
+
+{% block floating-sidebar %}
+  {% include "_sidebar.html" with active_link="product" %}
+{% endblock %}
+
+{% block navbar-right %}
+  {% if not user.is_authenticated %}
+    {# {% crispy signin_form %} #}
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock %}
+
+{% block page-id %} home {% endblock %}
+{% block page-class %} wow-animate-wrapper {% endblock %}
+
+{% block jumbo-tron %}
+<div class="jumbotron jumbotron-carousel corporate-jumbo" style="background-image:url(/static/site/img/product-banner.jpg); no-repeat center center;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-8 wow fadeInUp" data-wow-duration="2s">
+        <h1>{% include "_brandname.html" %}</h1>
+        <p>Best Quality Christmas Trees & Greens in NYC</p>
+        <p>Greenpoint Trees LLC Home Delivery Christmas Trees</p>
+        <p>1-800-399-7796</p>
+      </div>
+     <!-- <div class="col-md-4 col-sm-4">
+       {# {% if not user.is_authenticated %} #}
+          <div class="span3 well">
+            <legend>Create an Account</legend>
+           {# {% crispy signup_form %} #}
+          </div>
+        {# {% endif %} #} 
+        </div>-->
+      </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block container %}
+<div class="container">
+  <div class="row">
+      <div class="col-md-8">
+        <div class="heading box">
+          <p class="tlt" data-in-effect="bounceIn" data-min-display-time="0" data-delay="0.1s"> <strong>Call to Place Your Order 1-800-399-7796 </strong></p>
+        </div>
+      </div>
+      <div class="col-md-4 wow bounceInLeft" data-wow-duration="6s">
+        <div class="service-van">        
+          <img src="/static/site/img/service.png" alt="service">        
+        </div>
+      </div>      
+   </div>
+</div>
+
+
+<div class="container"> 
+  <div class="row">
+    <div class="col-md-12 wow fadeInRight" data-wow-duration="2.5s">
+      <div class="heading box">
+        <p><strong>Greenpoint Trees LLC Home Delivery Christmas Trees</strong></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row package">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="product-body text-center wow bounceIn" data-wow-duration="2s">
+         <h3>FRASER FIR</h3>
+         <p>The Fraser fir branches turn slightly upward. They have good form and needle-retention. They are dark blue-green in color. They have a pleasant scent, and excellent shipping characteristics as well.</p>
+         <hr>
+         <h3>Fresh Cut Premium Fraser Fir </h3>
+         <h4>4' to 15' foot </h4>
+         <hr> 
+      </div>
+    </div>
+  </div> 
+  
+
+   <div class="row package">
+    <div class="col-md-6">
+      <div class="product-box wow bounceInLeft" data-wow-duration="2s">
+        <div class="img-section" style="background-image:url(/static/site/img/big-tree.png)" alt="tree"></div>       
+        <div class="product-body bg-product-white">
+          <h3>Fresh Handmade Fraser Fir Wreaths</h3>
+          <h4>12" to 60" Decorated or Plain</h4> 
+          <h4>5 Christmas trees and  Wreths</h4>           
+          <div class="product-btn text-center">
+            <button type="button" class="btn btn-primary btn-lg">Ready for sell now <i class="fa fa-shopping-cart"></i></button>
+          </div> 
+        </div>
+      </div>  
+    </div>   
+   <div class="col-md-6">
+      <div class="product-box wow bounceInRight" data-wow-duration="2s">
+        <div class="img-section" style="background-image:url(/static/site/img/many_other_things.png)" alt="tree"></div>       
+        <div class="product-body bg-product-white">
+          <h3>Many Other Products are Available</h3>
+          <ul>
+            <li>Tree Stands</li>
+            <li>Lights</li>
+            <li>Potted Trees</li>
+            <li>Pine Roping</li>
+            <li>Balsam Trees</li>
+            <li>Balsam Wreaths</li>
+            <li>Poinsettias</li>
+          </ul>
+          <div class="product-btn text-center">
+            <button type="button" class="btn btn-primary btn-lg">Ready for sell now <i class="fa fa-shopping-cart"></i></button>
+          </div> 
+        </div>
+      </div>  
+    </div>   
+  </div>   
+
+  <div class="row package">      
+    <div class="col-md-6">
+      <div class="product-box bg-product-white wow bounceInLeft" data-wow-duration="2s">
+        <div class="img-section" style="background-image:url(/static/site/img/product-tree.jpg)" alt="tree"></div>       
+        <div class="product-body">
+          <h3>#1 $125.00</h3>
+          <ul>
+            <li>6' Fraser Fir Tree</li>
+            <li>Tree Stand</li>
+            <li>Including Delivery</li>
+          </ul>
+          <div class="product-btn text-center">
+            <button type="button" class="btn btn-primary btn-lg">Ready for sell now <i class="fa fa-shopping-cart"></i></button>
+          </div> 
+        </div>
+      </div>  
+    </div>
+     <div class="col-md-6">
+      <div class="product-box bg-product-white wow bounceInRight" data-wow-duration="2s">
+        <div class="img-section" style="background-image:url(/static/site/img/product-tree.jpg)" alt="tree"></div>       
+        <div class="product-body">
+          <h3>#2  $180.00</h3>
+          <ul>
+            <li>6' Fraser Fir Tree</li>
+            <li>Tree Stand</li>
+            <li>6 sets white light</li>
+            <li>Including Delivery</li>
+          </ul>
+          <div class="product-btn text-center">
+            <button type="button" class="btn btn-primary btn-lg">Ready for sell now <i class="fa fa-shopping-cart"></i></button>
+          </div> 
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <div class="row package">
+     <div class="col-md-6">
+      <div class="product-box bg-product-white wow bounceInLeft" data-wow-duration="2s">
+        <div class="img-section" style="background-image:url(/static/site/img/product-tree.jpg)" alt="tree"></div>       
+        <div class="product-body">
+          <h3>#3 $500.00</h3>
+          <ul>
+            <li>6' Fraser</li>
+            <li>Tree Stand</li>
+            <li>Lights, Topper, skirt & Ornaments</li>
+            <li>Including Delivery</li>
+          </ul>
+          <div class="product-btn text-center">
+            <button type="button" class="btn btn-primary btn-lg">Ready for sell now <i class="fa fa-shopping-cart"></i></button>
+          </div> 
+        </div>
+      </div>  
+    </div>
+    <div class="col-md-6">
+        <div class="product-box bg-product-white wow bounceInRight" data-wow-duration="2s">
+          <div class="img-section" style="background-image:url(/static/site/img/product-tree.jpg)" alt="tree"></div>       
+          <div class="product-body">
+            <h3>#4 $700.00</h3>
+            <ul>
+              <li>6' Fraser</li>
+              <li>Tree Stand</li>
+              <li>Lights, Topper, skirt & Ornaments</li>
+              <li>(1) 12" Deco Wreath</li>
+              <li>(1) 75" White Pine Ropping</li>
+              <li>Including Delivery</li>
+            </ul>
+            <div class="product-btn text-center">
+              <button type="button" class="btn btn-primary btn-lg">Ready for sell now <i class="fa fa-shopping-cart"></i></button>
+            </div> 
+          </div>
+        </div>  
+      </div>
+   </div> 
+
+    <div class="row package">
+      <div class="col-md-6">
+        <div class="product-box bg-product-white wow bounceInLeft" data-wow-duration="2s">
+          <div class="img-section" style="background-image:url(/static/site/img/product-tree.jpg)" alt="tree"></div>       
+          <div class="product-body">
+            <h3>#5 $1,500.00</h3>
+            <ul>
+              <li>6' Fraser</li>
+              <li>Tree Stand</li>
+              <li>Lights, Topper, skirt & Ornaments</li>
+              <li>Full Tree Decorating Service</li>
+              <li>Including Delivery</li>
+            </ul>
+            <div class="product-btn text-center">
+              <button type="button" class="btn btn-primary btn-lg">Ready for sell now <i class="fa fa-shopping-cart"></i></button>
+            </div> 
+          </div>
+        </div>  
+      </div>
+       <div class="col-md-6">
+        <div class="product-box bg-product-white wow bounceInRight" data-wow-duration="2s">
+          <div class="img-section" style="background-image:url(/static/site/img/large-tree.jpg)" alt="tree"></div>       
+          <div class="product-body">
+            <h3>Extra Large Court Yard Trees Available up to 40 feet</h3> 
+            <div class="product-btn text-center">
+              <button type="button" class="btn btn-primary btn-lg">Ready for sell now <i class="fa fa-shopping-cart"></i></button>
+            </div> 
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock container %}

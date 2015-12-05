@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'steinemromanitalic';
+    src: url('steinmen/steinemi-webfont.eot');
+    src: url('steinmen/steinemi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('steinmen/steinemi-webfont.woff2') format('woff2'),
+         url('steinmen/steinemi-webfont.woff') format('woff'),
+         url('steinmen/steinemi-webfont.ttf') format('truetype'),
+         url('steinmen/steinemi-webfont.svg#steinemromanitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'steinem_unicoderegular';
+    src: url('steinmen/steinemu-webfont.eot');
+    src: url('steinmen/steinemu-webfont.eot?#iefix') format('embedded-opentype'),
+         url('steinmen/steinemu-webfont.woff2') format('woff2'),
+         url('steinmen/steinemu-webfont.woff') format('woff'),
+         url('steinmen/steinemu-webfont.ttf') format('truetype'),
+         url('steinmen/steinemu-webfont.svg#steinem_unicoderegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

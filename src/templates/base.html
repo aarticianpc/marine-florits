@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block description %}{% endblock description %}">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+    <!-- Custom styles for this site -->
+    <link rel="stylesheet" type="text/css" href="{% static 'res/css/jquery.fancybox.css' %}" media="screen" />
+    <link rel="stylesheet" href="{% static 'res/fonts/fonts.css' %}"/>
+    <link rel="stylesheet" href="{% static 'res/css/animate.css' %}"/>
+    {% block styles %}
+    <link rel="stylesheet" href="{% static 'res/css/style.css' %}"/>
+    {% endblock styles %}
+    <!-- Custom tags for the head tag -->
+   
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="{% static 'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="{% static 'https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+ <body id="home">
+    
+    <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="{% static 'res/img/layout.jpg' %}" alt="layout.jpg">
+        </div>
+      </div>
+    </div>
+  </div>    
+  </header>   
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="box-col wow fadeIn" data-wow-duration="2s">
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info1"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>  
+          </div>
+          <div class="info" style="display:none" id="info1">                          
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info2"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>  
+          </div>
+          <div class="info" style="display:none" id="info2">                          
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>            
+          </div>
+
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info3"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>
+          </div>
+          <div class="info" style="display:none" id="info3">                          
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>            
+          </div>
+
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info4"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>
+          </div>
+          <div class="info" style="display:none" id="info4">                          
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>            
+          </div>
+
+        </div>  
+      </div><!-- /.col -->
+
+      <div class="col-md-4">
+        <div class="box-col wow fadeIn" data-wow-duration="2s">
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info5"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>
+          </div>
+          <div class="info" style="display:none" id="info5">                          
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>            
+          </div>
+
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info6"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>
+          </div>
+          <div class="info" style="display:none" id="info6">                          
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>            
+          </div>
+
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info7"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>
+          </div>
+          <div class="info" style="display:none" id="info7">                          
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>            
+          </div>
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info8"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>
+          </div>
+          <div class="info" style="display:none" id="info8">                          
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>            
+          </div>
+        </div>  
+      </div><!-- /.col -->
+
+      <div class="col-md-4">
+        <div class="box-col wow fadeIn" data-wow-duration="2s">
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info9"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>
+          </div>
+          <div class="info" style="display:none" id="info9">                          
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>            
+          </div>
+
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info10"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>
+          </div>
+          <div class="info" style="display:none" id="info10">                         
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>            
+          </div>
+
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info11"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>
+          </div>
+          <div class="info" style="display:none" id="info11">                         
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>            
+          </div>
+
+          <div class="box">
+            <section class="box-content wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product">
+              <div class="text">
+                <span class="text-top">
+                  <p>Funeral Custom - Butterfly</p> 
+                </span> 
+                <span class="text-bottom">
+                  <h5>[MFCU-061]</h5>
+                  <a class="btn btn-default fancybox"  href="#info12"  role="button"><i class="fa fa-search-plus"></i></a>
+                </span> 
+              </div>
+            </section>
+          </div>
+          <div class="info" style="display:none" id="info12">                         
+            <div class="info-box">
+              <img src="{% static 'res/img/small/image1.png' %}" alt="product" width="400" class="zoom_01" data-zoom-image="{% static 'res/img/large/image1.jpg' %}"/>
+            </div>
+            <div class="info-box">
+              <div class="info-body">
+                <h3>Lorem ipsum dolor sit amet</h3><hr>           
+                <i class="fa fa-phone"></i>         
+                <span>Please call our shop for size, pricing and availability</span> <hr>
+                <h5>As Shown : MFCU-077</h5>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div><!-- /.col -->
+    </div>    
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="{% static 'res/img/footer.png' %}" alt="layout.jpg">
+        </div>
+      </div>
+    </div>      
+  </footer> 
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    
+   
+  <script src="{% static 'res/lib/direction-aware/js/modernizr.custom.97074.js' %}"></script>
+  <script type="text/javascript" src="{% static 'res/lib/direction-aware/js/jquery.hoverdir.js' %}"></script>
+  <script type="text/javascript" src="{% static 'res/js/jquery.fancybox.js' %}"></script>
+  <script src="{% static 'res/lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'res/js/jquery.elevatezoom.js' %}"></script>  
+  <script type="text/javascript">
+    $(function() {
+        $('.box').each( function() { $(this).hoverdir(); } );
+        wow = new WOW({
+              boxClass:     'wow',      // default
+              animateClass: 'animated', // default
+              offset:       0,          // default
+              mobile:       true,       // default
+              live:         true        // default
+                      });
+        wow.init();
+        var _img = $('.zoom_01');
+        $('.fancybox').fancybox({
+          afterLoad:function(){
+            _img.elevateZoom({
+              cursor: "crosshair",
+              zoomWindowFadeIn: 500,
+              zoomWindowFadeOut: 750,
+              scrollZoom : true
+              });   
+          },
+          beforeClose:function() {
+            $('.zoomContainer').remove();
+            _img.removeData('elevateZoom');
+            _img.removeData('zoomImage');
+          }
+        });      
+    });
+  </script> 
+  </body>
+</html>
